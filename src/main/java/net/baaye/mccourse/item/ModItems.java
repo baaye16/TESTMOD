@@ -1,6 +1,7 @@
 package net.baaye.mccourse.item;
 
 import net.baaye.mccourse.MCCourseMod;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

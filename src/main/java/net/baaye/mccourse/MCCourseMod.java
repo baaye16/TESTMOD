@@ -1,6 +1,7 @@
 package net.baaye.mccourse;
 
 import com.mojang.logging.LogUtils;
+import net.baaye.mccourse.block.ModBlocks;
 import net.baaye.mccourse.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class MCCourseMod
         IEventBus modEventBus = context.getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -53,6 +55,10 @@ public class MCCourseMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ALEXANDRITE);
             event.accept(ModItems.RAW_ALEXANDRITE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.alexandrite_block);
+            event.accept(ModBlocks.raw_alexandrite_block);
         }
 
     }
