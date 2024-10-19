@@ -2,10 +2,13 @@ package net.baaye.mccourse.block;
 
 import net.baaye.mccourse.MCCourseMod;
 import net.baaye.mccourse.item.ModItems;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -31,14 +34,23 @@ public class ModBlocks {
     public static final RegistryObject<Block> alexandrite_ore_block = registerBlock("alexandrite_ore_block",
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops().strength(5.0F,
                     6.0F).sound(SoundType.METAL)));
+
+
     public static final RegistryObject<Block> end_stone_alexandrite_ore = registerBlock("end_stone_alexandrite_ore",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops().strength(5.0F,
-                    6.0F).sound(SoundType.METAL)));
+            () -> new DropExperienceBlock(UniformInt.of(3,9),
+                    BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).
+                    requiresCorrectToolForDrops().strength(3.0F, 3.0F)));
+
+
     public static final RegistryObject<Block> nether_alexandrite_ore = registerBlock("nether_alexandrite_ore",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops().strength(5.0F,
-                    6.0F).sound(SoundType.METAL)));
+            () -> new DropExperienceBlock(UniformInt.of(2,8),BlockBehaviour.Properties.of().mapColor(MapColor.METAL).requiresCorrectToolForDrops()));
+
+
+
     public static final RegistryObject<Block> alexandrite_ore = registerBlock("alexandrite_ore",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops().strength(5.0F,
+            () -> new DropExperienceBlock(UniformInt.of(2,5),
+                    BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).
+                            requiresCorrectToolForDrops().strength(5.0F,
                     6.0F).sound(SoundType.METAL)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
