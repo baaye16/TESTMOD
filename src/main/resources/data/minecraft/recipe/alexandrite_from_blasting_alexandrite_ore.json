@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 60,
+  "experience": 0.3,
+  "group": "alexandrite",
+  "ingredient": {
+    "item": "mccourse:alexandrite_block"
+  },
+  "result": {
+    "id": "mccourse:alexandrite"
+  }
+}
