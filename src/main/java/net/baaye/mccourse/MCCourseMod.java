@@ -2,6 +2,7 @@ package net.baaye.mccourse;
 
 import com.mojang.logging.LogUtils;
 import net.baaye.mccourse.block.ModBlocks;
+import net.baaye.mccourse.item.ModCreativeModeTabs;
 import net.baaye.mccourse.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,8 @@ public class MCCourseMod
     public MCCourseMod(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

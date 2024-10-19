@@ -37,7 +37,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> end_stone_alexandrite_ore = registerBlock("end_stone_alexandrite_ore",
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops().strength(5.0F,
                     6.0F).sound(SoundType.METAL)));
-    public static final RegistryObject<Block> nether_alexandrite_ore = registerBlock("end_stone_alexandrite_ore",
+    public static final RegistryObject<Block> nether_alexandrite_ore = registerBlock("nether_alexandrite_ore",
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops().strength(5.0F,
                     6.0F).sound(SoundType.METAL)));
 
