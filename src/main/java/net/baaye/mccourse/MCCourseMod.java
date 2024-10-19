@@ -63,7 +63,6 @@ public class MCCourseMod
             event.accept(ModBlocks.alexandrite_block);
             event.accept(ModBlocks.raw_alexandrite_block);
             event.accept(ModBlocks.alexandrite_ore_block);
-            event.accept(ModBlocks.deepslate_alexandrite_ore);
             event.accept(ModBlocks.end_stone_alexandrite_ore);
             event.accept(ModBlocks.nether_alexandrite_ore);
         }

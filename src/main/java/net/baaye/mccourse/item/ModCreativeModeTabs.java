@@ -23,7 +23,6 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.alexandrite_block.get());
                         output.accept(ModBlocks.raw_alexandrite_block.get());
-                        output.accept(ModBlocks.deepslate_alexandrite_ore.get());
                         output.accept(ModBlocks.nether_alexandrite_ore.get());
                         output.accept(ModBlocks.end_stone_alexandrite_ore.get());
 
