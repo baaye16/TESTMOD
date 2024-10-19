@@ -56,8 +56,8 @@ public class MCCourseMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.ALEXANDRITE);
-            event.accept(ModItems.RAW_ALEXANDRITE);
+            event.accept(ModItems.alexandrite);
+            event.accept(ModItems.raw_alexandrite);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.alexandrite_block);
@@ -65,6 +65,7 @@ public class MCCourseMod
             event.accept(ModBlocks.alexandrite_ore_block);
             event.accept(ModBlocks.end_stone_alexandrite_ore);
             event.accept(ModBlocks.nether_alexandrite_ore);
+            event.accept(ModBlocks.alexandrite_ore);
         }
 
     }

@@ -15,11 +15,12 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MCCourseMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> COURSE_TAB = CREATIVE_MODE_TABS.register("course_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALEXANDRITE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.alexandrite.get()))
                     .title(Component.translatable("creativetab.cource_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.ALEXANDRITE.get());
-                        output.accept(ModItems.RAW_ALEXANDRITE.get());
+                        output.accept(ModItems.alexandrite.get());
+                        output.accept(ModBlocks.alexandrite_ore.get());
+                        output.accept(ModItems.raw_alexandrite.get());
 
                         output.accept(ModBlocks.alexandrite_block.get());
                         output.accept(ModBlocks.raw_alexandrite_block.get());
