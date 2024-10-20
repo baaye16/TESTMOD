@@ -1,7 +1,7 @@
 {
+  "replace": false,
   "values": [
     "mccourse:end_stone_alexandrite_ore",
     "mccourse:nether_alexandrite_ore"
-
   ]
 }

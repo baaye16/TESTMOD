@@ -1,10 +1,10 @@
 {
+  "replace": false,
   "values": [
     "mccourse:alexandrite_block",
     "mccourse:raw_alexandrite_block",
-    "mccourse:alexandrite_ore",
+    "mccourse:alexandrite_ore_block",
     "mccourse:end_stone_alexandrite_ore",
     "mccourse:nether_alexandrite_ore"
-
   ]
 }

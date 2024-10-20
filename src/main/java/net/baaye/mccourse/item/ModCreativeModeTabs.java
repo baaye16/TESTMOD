@@ -1,7 +1,6 @@
 package net.baaye.mccourse.item;
 
 import net.baaye.mccourse.MCCourseMod;
-import net.baaye.mccourse.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

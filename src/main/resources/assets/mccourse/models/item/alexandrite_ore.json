@@ -1,6 +1,3 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "mccourse:block/alexandrite_ore"
-  }
+  "parent": "mccourse:block/alexandrite_ore"
 }
